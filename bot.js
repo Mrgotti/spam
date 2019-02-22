@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require('./config.json');
 client.config = config;
+const token = process.env.token
 
 console.log("Ready to level up!");
 
@@ -69,4 +70,4 @@ client.on("message", async message => {
   }*/
 });
 
-client.login(config.botToken);
+Client.login(token);
